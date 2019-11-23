@@ -1,0 +1,7 @@
+# https://github.com/fluxcd/flux/blob/master/docs/tutorials/get-started-kustomize.md
+
+namespace: flux
+bases:
+  - github.com/fluxcd/flux/deploy
+patchesStrategicMerge:
+  - patch.yaml
